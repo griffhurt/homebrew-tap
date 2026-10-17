@@ -1,6 +1,6 @@
 cask "harbor" do
-  version "1.0.0"
-  sha256 "e4ace55fd266f28b3f2881e4c0f956ae2769388aa859d5c89f3051c4fc3373a8"
+  version "1.1.0"
+  sha256 "87c96704ae36089ea61ffe9d33ad8dda2da413e539cdae99962125acbd5ac654"
 
   url "https://github.com/griffhurt/harbor/releases/download/v#{version}/Harbor-#{version}.zip"
   name "Harbor"
@@ -12,6 +12,7 @@ cask "harbor" do
     strategy :github_latest
   end
 
+  auto_updates true
   depends_on macos: :tahoe
 
   app "Harbor.app"
